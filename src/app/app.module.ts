@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddcourseNestComponent } from './addcourse-nest/addcourse-nest.component';
 import { AddfriendNestComponent } from './addfriend-nest/addfriend-nest.component';
 import { ViewFriendComponent } from './view-friend/view-friend.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 
 
 const myRoute:Routes=[
@@ -60,6 +61,10 @@ const myRoute:Routes=[
   {
     path:"viewfriend",
     component:ViewFriendComponent
+  },
+  {
+    path:"employeelogin",
+    component:EmployeeLoginComponent
   }
 ]
 
@@ -75,7 +80,8 @@ const myRoute:Routes=[
     ViewcourseNestComponent,
     AddcourseNestComponent,
     AddfriendNestComponent,
-    ViewFriendComponent
+    ViewFriendComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
