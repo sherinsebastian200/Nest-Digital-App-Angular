@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-viewcourse-nest',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./viewcourse-nest.component.css']
 })
 export class ViewcourseNestComponent {
-  
+  constructor(private api:ApiService){
+    api.fetchCourses().subscribe(
+      (response) =>{
+        this.courses=response;
+      }
+    )
+  }
+
+  courses:any = []
 
 }
