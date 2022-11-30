@@ -38,6 +38,11 @@ const myRoute:Routes=[
     path:"adminlogin",
     component:AdminLoginComponent
 
+  },
+  {
+    path:"viewallcourses",
+    component:ViewcourseNestComponent
+
   }
 ]
 
