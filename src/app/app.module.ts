@@ -20,6 +20,7 @@ import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
 import { NavbarAddComponent } from './navbar-add/navbar-add.component';
+import { NavbarViewComponent } from './navbar-view/navbar-view.component';
 
 
 const myRoute:Routes=[
@@ -89,7 +90,8 @@ const myRoute:Routes=[
     ViewFriendComponent,
     EmployeeLoginComponent,
     EmployeeRegisterComponent,
-    NavbarAddComponent
+    NavbarAddComponent,
+    NavbarViewComponent
   ],
   imports: [
     BrowserModule,
