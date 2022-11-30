@@ -19,6 +19,7 @@ import { AddfriendNestComponent } from './addfriend-nest/addfriend-nest.componen
 import { ViewFriendComponent } from './view-friend/view-friend.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
+import { NavbarAddComponent } from './navbar-add/navbar-add.component';
 
 
 const myRoute:Routes=[
@@ -87,7 +88,8 @@ const myRoute:Routes=[
     AddfriendNestComponent,
     ViewFriendComponent,
     EmployeeLoginComponent,
-    EmployeeRegisterComponent
+    EmployeeRegisterComponent,
+    NavbarAddComponent
   ],
   imports: [
     BrowserModule,
