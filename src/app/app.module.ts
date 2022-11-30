@@ -11,6 +11,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const myRoute:Routes=[
   {
@@ -44,7 +45,8 @@ const myRoute:Routes=[
     GalleryNestComponent,
     ContactNestComponent,
     AboutNestComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
