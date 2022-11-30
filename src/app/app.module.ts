@@ -12,6 +12,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { ViewcourseNestComponent } from './viewcourse-nest/viewcourse-nest.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 const myRoute:Routes=[
   {
@@ -46,13 +49,15 @@ const myRoute:Routes=[
     ContactNestComponent,
     AboutNestComponent,
     AdminLoginComponent,
-    NavBarComponent
+    NavBarComponent,
+    ViewcourseNestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
