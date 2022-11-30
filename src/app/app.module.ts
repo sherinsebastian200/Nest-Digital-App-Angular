@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ViewcourseNestComponent } from './viewcourse-nest/viewcourse-nest.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddcourseNestComponent } from './addcourse-nest/addcourse-nest.component';
 
 
 const myRoute:Routes=[
@@ -43,6 +44,11 @@ const myRoute:Routes=[
     path:"viewallcourses",
     component:ViewcourseNestComponent
 
+  },
+  {
+    path:"addallcourses",
+    component:AddcourseNestComponent
+
   }
 ]
 
@@ -55,7 +61,8 @@ const myRoute:Routes=[
     AboutNestComponent,
     AdminLoginComponent,
     NavBarComponent,
-    ViewcourseNestComponent
+    ViewcourseNestComponent,
+    AddcourseNestComponent
   ],
   imports: [
     BrowserModule,
