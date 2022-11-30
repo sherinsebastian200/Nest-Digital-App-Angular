@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeNestComponent } from './home-nest/home-nest.component';
 import { GalleryNestComponent } from './gallery-nest/gallery-nest.component';
+import { ContactNestComponent } from './contact-nest/contact-nest.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeNestComponent,
-    GalleryNestComponent
+    GalleryNestComponent,
+    ContactNestComponent
   ],
   imports: [
     BrowserModule,
