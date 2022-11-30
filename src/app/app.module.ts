@@ -15,6 +15,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ViewcourseNestComponent } from './viewcourse-nest/viewcourse-nest.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddcourseNestComponent } from './addcourse-nest/addcourse-nest.component';
+import { AddfriendNestComponent } from './addfriend-nest/addfriend-nest.component';
 
 
 const myRoute:Routes=[
@@ -49,6 +50,11 @@ const myRoute:Routes=[
     path:"addallcourses",
     component:AddcourseNestComponent
 
+  },
+  {
+    path:"addfriend",
+    component:AddfriendNestComponent
+
   }
 ]
 
@@ -62,7 +68,8 @@ const myRoute:Routes=[
     AdminLoginComponent,
     NavBarComponent,
     ViewcourseNestComponent,
-    AddcourseNestComponent
+    AddcourseNestComponent,
+    AddfriendNestComponent
   ],
   imports: [
     BrowserModule,
