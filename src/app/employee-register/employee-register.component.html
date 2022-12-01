@@ -20,7 +20,7 @@
 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Last Name</label>
-                    <textarea name="lastname" [(ngModel)]="lastname" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <input name="lastname" [(ngModel)]="lastname" type="text"  class="form-control">
                 </div>
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Street Name</label>
-                   <input name="street" [(ngModel)]="street" type="date" name="" id="" class="form-control">
+                   <input name="street" [(ngModel)]="street" type="text" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Pincode</label>
@@ -37,7 +37,23 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">district</label>
-                    <input name="district" [(ngModel)]="district" type="text" class="form-control">
+                    <select name="district" [(ngModel)]="district" id="" class="form-control">
+                        <option value="Trivandrum">Trivandrum</option>
+                        <option value="Kollam">Kollam</option>
+                        <option value="Alppuzha">Alappuzha</option>
+                        <option value="Kottayam">Kottayam</option>
+                        <option value="Idukki">Idukki</option>
+                        <option value="Ernaklulam">Ernaklulam</option>
+                        <option value="Thrissur">Thrissur</option>
+                        <option value="Palakkad">Palakkad</option>
+                        <option value="Malappuram">Malappuram</option>
+                        <option value="Kozhikkode">Kozhikkode</option>
+                        <option value="Wayanad">Wayanad</option>
+                        <option value="Kannur">Kannur</option>
+                        <option value="Kasargod">Kasargod</option>
+                        <option value="Pathanamthitta">Pathanamthitta</option>
+                    </select>
+                    
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">State</label>
@@ -74,7 +90,7 @@
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Date of Joining</label>
-                    <input name="joindate" [(ngModel)]="joindate" type="text" class="form-control">
+                    <input name="joindate" [(ngModel)]="joindate" type="date" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Username</label>

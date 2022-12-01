@@ -3,21 +3,49 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-4">
+                <ng-container *ngIf="loading; then loadingScreen; else dataScreen"></ng-container>
+                <ng-template #loadingScreen>
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-secondary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-info" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-dark" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                </ng-template>
+
+               <ng-template #dataScreen>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of friend">
 
                     <div class="card" >
-                        
+                        <img height="200px" src="https://media.gettyimages.com/id/1182745546/photo/hispanic-female-studying-on-laptop.jpg?s=612x612&w=gi&k=20&c=VOSTcZYmdMOd5dYmmQ2ZgvOoSmoj0J0h1M2f6vEBH6g=">
                         <div class="card-body">
-                          <h5 class="card-title text-center">{{i.name}}</h5>
-                          <p class="card-text text-center ">{{i.friendName}}</p>
-                          <p class="card-text text-center ">{{i.friendNickName}}</p>
-                          <p class="card-text text-center ">{{i.DescribeYourFriend}}</p>
+                          <h5 class="card-title text-center">Name:{{i.name}}</h5>
+                          <p class="card-text text-center ">FriendName:{{i.friendName}}</p>
+                          <p class="card-text text-center ">Friend Nickname:{{i.friendNickName}}</p>
+                          <p class="card-text text-center ">Describe Your Friend:{{i.DescribeYourFriend}}</p>
                           
                         </div>
                       </div>
                      </div>
-
-              
+               </ng-template>
                
             </div>
         </div>

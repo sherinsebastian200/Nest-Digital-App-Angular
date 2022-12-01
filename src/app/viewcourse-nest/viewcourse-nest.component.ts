@@ -10,11 +10,13 @@ export class ViewcourseNestComponent {
   constructor(private api:ApiService){
     api.fetchCourses().subscribe(
       (response) =>{
+        this.loading = false
         this.courses=response;
       }
     )
   }
 
   courses:any = []
+  loading:boolean = true
 
 }
